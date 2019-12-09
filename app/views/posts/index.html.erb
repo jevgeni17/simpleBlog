@@ -1,1 +1,5 @@
-<h1>Main page</h1>
+<h1>All our posts</h1>
+<% @post.each do |post| %>
+  <h3><%= post.title %></h3>
+  <p><%= post.body %></p>
+<% end %>
